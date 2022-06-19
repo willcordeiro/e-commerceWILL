@@ -1,1 +1,1 @@
-react part of my ecommerce
+react front-end of personal project --> ecommerce
