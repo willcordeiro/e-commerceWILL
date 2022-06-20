@@ -1,0 +1,229 @@
+* {
+  font-family: "Proxima Nova", "San Francisco", "Helvetica Neue Desk Interface",
+    "Lucida Grande UI", "Segoe UI", "Ubuntu", "Roboto", "Droid Sans", "Tahoma",
+    helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+:root {
+  --primary: #111111;
+  --light: #eeeeee;
+  --purple: #8757e7ff;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: var(--purple);
+  padding: 30px 32px;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--light);
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+a {
+  font-weight: bold;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: var(--primary);
+  padding-top: 120px;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+.mobile {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: var(--purple);
+  color: var(--light);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.mobileInput {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.mobileInput.is-active {
+  display: block;
+}
+
+.mobile:hover {
+  color: rgb(59, 46, 83);
+}
+
+.logo {
+  color: var(--light);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: uppercase;
+  min-width: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin: 0 -16px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.menu a {
+  color: var(--light);
+  margin: 0 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transform: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+}
+
+.menu a.is-active,
+.menu a:hover {
+  color: rgb(59, 46, 83);
+}
+
+.test {
+  margin-top: 140px;
+  max-width: 1900px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .test {
+    display: flex;
+  }
+}
+
+.inputSearch {
+  padding: 10px;
+  width: 600px;
+  border: none;
+  border-radius: 2px;
+  border-right: 2px solid rgb(184, 180, 180);
+  outline: none;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.searchButton {
+  text-decoration: none;
+  border: none;
+  background: white;
+  padding: 6.7px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.test1 {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+ul {
+  background-color: #ff6500;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+}
+
+.test1 li {
+  margin: 0 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transform: 0.4s;
+  border-radius: 99px;
+  cursor: pointer;
+}
+li:hover {
+  color: rgb(29, 27, 27);
+}
+
+.nave {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 25px 32px;
+  list-style-type: none;
+}
