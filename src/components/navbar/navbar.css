@@ -29,7 +29,7 @@ nav {
   padding: 30px 32px;
 }
 
-.hamburger {
+.hamburger1 {
   position: relative;
   display: block;
   width: 35px;
@@ -40,9 +40,9 @@ nav {
   border: none;
 }
 
-.hamburger .bar,
-.hamburger:after,
-.hamburger:before {
+.hamburger1 .bar,
+.hamburger1:after,
+.hamburger1:before {
   content: "";
   display: block;
   width: 100%;
@@ -52,14 +52,14 @@ nav {
   transition: 0.4s;
 }
 
-.hamburger.is-active:before {
+.hamburger1.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.hamburger.is-active:after {
+.hamburger1.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
 }
-.hamburger.is-active .bar {
+.hamburger1.is-active .bar {
   opacity: 0;
 }
 
@@ -162,7 +162,7 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .hamburger {
+  .hamburger1 {
     display: none;
   }
   .menu {

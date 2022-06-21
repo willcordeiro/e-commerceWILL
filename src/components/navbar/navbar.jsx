@@ -29,7 +29,7 @@ const Navbar = () => {
               Cart
             </a>
           </div>
-          <button className="hamburger" onClick={NavbarActive}>
+          <button className="hamburger is-active">
             <div className="bar"></div>
           </button>
         </div>
@@ -52,10 +52,9 @@ const Navbar = () => {
             <a href="">Register</a>
             <a href="">
               <FaShoppingCart />
-              Cart
             </a>
           </div>
-          <button className="hamburger" onClick={NavbarActive}>
+          <button className="hamburger1" onClick={NavbarActive}>
             <div className="bar"></div>
           </button>
         </div>
