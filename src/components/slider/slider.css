@@ -78,8 +78,12 @@
 }
 
 @media screen and (max-width: 1021px) {
+  .slide {
+    margin-top: 65px;
+  }
+
   .slider {
-    margin-top: 95px;
+    margin-top: 65px;
   }
   .content {
     width: 100%;
