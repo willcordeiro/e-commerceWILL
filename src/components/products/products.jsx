@@ -8,7 +8,7 @@ const Products = () => {
   return (
     <>
       <div className="boxbox">
-        <div class="item-a col">
+        <div className="item-a col">
           <div className="box">
             <div className="slide-img">
               <img src={img1} className="img1" />
@@ -33,7 +33,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div class="item-a col">
+        <div className="item-a col">
           <div className="box">
             <div className="slide-img">
               <img src={img2} className="img1" />
@@ -57,7 +57,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div class="item-a col">
+        <div className="item-a col">
           <div className="box">
             <div className="slide-img">
               <img src={img3} className="img1" />
@@ -81,7 +81,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div class="item-a col">
+        <div className="item-a col">
           <div className="box">
             <div className="slide-img">
               <img src={img4} className="img1" />
