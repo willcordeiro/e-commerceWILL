@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.css";
 import NavbarActive from "./hooks/navbarActive";
 import MobileInput from "./hooks/mobileInput";
-
+import inputPC from "./hooks/inputPC";
 import { FaSearch, FaShoppingCart, FaStoreAlt } from "react-icons/fa";
 
 const Navbar = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
             <button className="searchButton">
               <FaSearch />
             </button>
-            <a href="">Login</a>
+            <a href="/login">Login</a>
             <a href="">Register</a>
             <a href="">
               <FaShoppingCart />
@@ -43,14 +43,15 @@ const Navbar = () => {
             <input
               type="text"
               placeholder=" Search Products..."
-              className="inputSearch"
+              className="inputSearch11"
             ></input>
-            <button className="searchButton">
+
+            <a className="searchButton" onClick={inputPC}>
               <FaSearch />
-            </button>
-            <a href="">Login</a>
+            </a>
+            <a href="/login">Login</a>
             <a href="">Register</a>
-            <a href="">
+            <a href="" className="cart">
               <FaShoppingCart />
             </a>
           </div>
@@ -69,13 +70,13 @@ const Navbar = () => {
           placeholder=" Search Products ... "
           className="mobileInput"
         ></input>
-        <a href="" className="mobile">
+        <a href="/login" className="mobile">
           Login
         </a>
         <a href="" className="mobile">
           register
         </a>
-        <a href="" className="mobile">
+        <a href="" className="mobile cart">
           <FaShoppingCart />
         </a>
       </div>

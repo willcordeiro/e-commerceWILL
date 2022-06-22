@@ -5,6 +5,8 @@ import Slider from "./components/slider/slider";
 import Login from "./components/login/login";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Product from "./components/products/products";
+import ProductsList from "./components/productsList/productsList";
+import Title from "./components/title/title";
 function App() {
   return (
     <>
@@ -16,7 +18,10 @@ function App() {
             <div>
               <Navbar></Navbar>
               <Slider></Slider>
+              <Title>TOP CLOTHES</Title>
               <Product></Product>
+              <Title>HARDWARE</Title>
+              <ProductsList></ProductsList>
             </div>
           )}
         />
